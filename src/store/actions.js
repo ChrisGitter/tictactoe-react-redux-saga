@@ -1,7 +1,0 @@
-export const SET_PLAYERS_TURN = 'SET_PLAYERS_TURN';
-export const ADD_FIELD_TO_PLAYER = 'ADD_FIELD_TO_PLAYER';
-export const ADD_FIELD_TO_COMPUTER = 'ADD_FIELD_TO_COMPUTER';
-export const RESET_BOARD = 'RESET_BOARD';
-export const END_GAME = 'END_GAME';
-export const PLAYER_WINS = 'PLAYER_WINS';
-export const COMPUTER_WINS = 'COMPUTER_WINS';

@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import TileRow from './TileRow';
-import ResetButton from './ResetButton';
-import GameEndOverlay from './GameEndOverlay';
+import TileRow from "./TileRow";
+import ResetButton from "./ResetButton";
+import GameEndOverlay from "./GameEndOverlay";
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -25,19 +25,14 @@ const BoardWrapper = styled.div`
 `;
 
 const Board = () => {
-  const keys = 'abcdefg'.split('');
+  const keys = "abcdefg".split("");
   const renderTiles = Array.from(Array(3)).map((_, i) => (
-    <TileRow
-      row={i + 1}
-      key={keys[i]}
-    />
+    <TileRow row={i + 1} key={keys[i]} />
   ));
   return (
     <AppWrapper>
       <GameEndOverlay />
-      <BoardWrapper>
-        {renderTiles}
-      </BoardWrapper>
+      <BoardWrapper>{renderTiles}</BoardWrapper>
       <ResetButton />
     </AppWrapper>
   );
